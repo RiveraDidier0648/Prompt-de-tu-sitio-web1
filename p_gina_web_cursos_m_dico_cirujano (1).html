@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Ingreso - Médico Cirujano</title>
+
+    <!-- ESTILOS CSS EMBEBIDOS -->
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333333;
+        }
+
+        /* 1. ENCABEZADO (HEADER) */
+        header {
+            background-color: #c0392b; /* Rojo */
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Brush Script MT', 'Comic Sans MS', cursive;
+            font-size: 50px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        /* 2. MENÚ DE NAVEGACIÓN */
+        nav {
+            background-color: #962d22;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #c0392b;
+            border-radius: 5px;
+        }
+
+        /* 3. SECCIONES GENERALES */
+        section {
+            width: 85%;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #c0392b;
+            border-bottom: 2px solid #c0392b;
+            padding-bottom: 5px;
+        }
+
+        ul.materias {
+            list-style-type: square;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* ESTILO PARA LA IMAGÉN (AQUÍ ESTABA EL DETALLE) */
+        .imagen-medicina {
+            width: 100%;           /* Hace que se adapte al ancho del contenedor */
+            max-width: 900px;      /* Tamaño máximo */
+            height: auto;          /* Mantiene la proporción de la imagen */
+            display: block;        /* La centra en pantalla */
+            margin: 20px auto;     /* Margen arriba y abajo */
+            border-radius: 8px;    /* Esquinas redondeadas */
+        }
+
+        /* 4. FORMULARIO DE VENTAS */
+        .seccion-formulario {
+            background-color: #c0392b;
+            color: white;
+            font-family: 'Georgia', serif;
+        }
+
+        .seccion-formulario h2 {
+            color: white;
+            border-bottom: 2px solid white;
+        }
+
+        .campo-form {
+            margin-bottom: 15px;
+        }
+
+        .campo-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .campo-form input, 
+        .campo-form select {
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            font-family: 'Georgia', serif;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .btn-enviar {
+            background-color: #2c3e50;
+            color: white;
+            font-family: 'Georgia', serif;
+            font-size: 18px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .btn-enviar:hover {
+            background-color: #1a252f;
+        }
+
+        /* 5. FOOTER */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Cursos para Médico Cirujano</h1>
+        <p>¡Prepárate e ingresa a la carrera de tus sueños!</p>
+    </header>
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#materias">Materias</a>
+        <a href="#registro">Inscribirse</a>
+    </nav>
+
+    <!-- SECCIÓN 1: BIENVENIDA -->
+    <section id="inicio">
+        <h2>Bienvenido a tu Preparación Médica</h2>
+        <p>Nuestro programa está especialmente diseñado para estudiantes y egresados de bachillerato que desean presentar su examen de admisión para la carrera de <strong>Médico Cirujano</strong>.</p>
+        <p>Contamos con asesores capacitados, simuladores de examen y material actualizado para asegurar tu lugar en la universidad.</p>
+    </section>
+
+    <!-- SECCIÓN DE LA IMAGEN (Se usa un enlace seguro de imagen de Internet) -->
+    <div style="text-align: center;">
+        <img src=IMAGENDOC.png alt="Estudiantes de Medicina" class="imagen-medicina">
+    </div>
+
+    <!-- SECCIÓN 2: MATERIAS -->
+    <section id="materias">
+        <h2>Módulos del Curso</h2>
+        <p>El curso cubre los temas fundamentales que te evaluarán en el examen de ingreso:</p>
+        <ul class="materias">
+            <li><strong>Anatomía Humana:</strong> Generalidades, sistema óseo, muscular y cardiovascular.</li>
+            <li><strong>Biología Celular e Histología:</strong> Estructura celular, tejidos y funciones orgánicas.</li>
+            <li><strong>Premédica Básica:</strong> Salud pública, términos médicos y principios de farmacología.</li>
+            <li><strong>Razonamiento Científico:</strong> Resolución de preguntas tipo examen de admisión.</li>
+        </ul>
+    </section>
+
+    <!-- SECCIÓN 3: FORMULARIO -->
+    <section id="registro" class="seccion-formulario">
+        <h2>Formulario de Inscripción y Ventas</h2>
+        <p>Llena tus datos para recibir la cotización completa y asegurar tu lugar en el curso:</p>
+
+        <form action="#" method="post">
+            <div class="campo-form">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="telefono">Teléfono / WhatsApp:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej. 6561234567" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="curso">Selecciona el Curso de tu Interés:</label>
+                <select id="curso" name="curso" required>
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="completo">Curso Completo Médico Cirujano</option>
+                    <option value="anatomia">Solo Módulo de Anatomía</option>
+                    <option value="premedica">Solo Módulo de Premédica</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit btn-enviar">Solicitar Información del Curso</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>Página Web Desarrollada por:</strong> Victor Didier Rivera Sánchez</p>
+        <p><strong>Grado y Grupo:</strong> 5to Semestre - Grupo I</p>
+        <p><strong>Especialidad:</strong> Programación</p>
+        <p>&copy; 2026 - Proyecto Escolar de Desarrollo Web</p>
+    </footer>
+
+</body>
+</html>
